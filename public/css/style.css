@@ -1,0 +1,305 @@
+
+@import "~font-awesome/css/font-awesome.css";
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+nav{
+  background: #FAFAD2;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+  margin: auto;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #080505;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+a.active,a:hover{
+  background:#F0E68C; 
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  background:#FAFAD2; 
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #060607;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+button{
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #000000; 
+  border: none;
+  color: white;
+  padding:10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#logo{
+  color: #000000;
+  font-size: 32px;
+  font-family: initial;
+  text-decoration: none;
+  
+}
+b{
+  color: #c5b100;
+}
+.grid-heading{
+  text-align: center;
+  text-justify: auto;
+  font-size: 35px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+/* style for header */
+.masthead {
+  overflow: hidden;
+  color: #fff;
+  padding: 1em;
+  border-top: 6px solid #9ba800;
+  background-color: #404040;
+}
+.masthead.responsive-image {
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+.masthead .entry-header {
+  margin: 7.5em 0 3.5em 0;
+  font-weight: 300;
+  line-height: 1.5;
+  overflow: auto;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.masthead .entry-header .joinus{
+  font-size: 30px;
+  font-family: inherit;
+
+}
+.masthead .entry-header .btnjoin{
+  height: 52px;
+  position: relative;
+  width: 220px;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+  background: goldenrod;
+  border: goldenrod;
+}
+.masthead .entry-header .tel{
+  border: 1px solid #000000;
+  background-color: white;
+  color: black;
+  height: 50px;
+  padding: 0px 90px;
+  /* margin: 0 0px; */
+  border-radius: 0 !important;
+  font-size: 20px;
+  font-family: inherit;
+
+}
+
+  
+@media screen and (min-width: 640px) {
+  .masthead .entry-header {
+    margin: 15.5em 0 7.5em 0;
+  }
+}
+
+.masthead .entry-title {
+  font-size: 2.5;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0 0 0.25em 0;
+}
+@media screen and (min-width: 640px) {
+  .masthead .entry-title {
+    max-width: 650px;
+    font-size: 33px;
+    margin-left: 76px;
+  }
+}
+
+.masthead .entry-subtitle {
+  font-family: "inherit";
+  
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  margin-left: 75px;
+  color: #000000;
+  font-size: 23px;
+
+  
+}
+
+.step-reg{
+background-color: lightgoldenrodyellow;
+
+}
+
+
+/* style sheet for haeder */
+
+.responsive-image {
+  background-image: url(/img/safir-jewelry-store.jpg);
+}
+
+@media screen and (min-width: 320px) {
+  .responsive-image {
+    background-image: url(/img/safir-jewelry-store.jpg);
+  }
+}
+@media screen and (min-width: 640px)
+{
+  .responsive-image {
+    background-image: url(/img/safir-jewelry-store.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .responsive-image {
+    background-image: url(/img/safir-jewelry-store.jpg);
+  }
+}
+
+
+/* individual blog css here */
+.blog{
+font-size: 25px;
+padding: 53px 70px 40px 340px;
+}
+.blog .he1{
+  font-size: 2vw;
+  padding-bottom: 30px;
+}
+
+.blog .he4{
+  font-size: 14px;
+  font-family: inherit;
+  font-style: italic;
+  padding: 8px 0 10px 0px;
+}
+.blog .pe{
+  font-size: 1vw;
+}
+
+.container .psell{
+  font-size: 15px;
+}
+
+/* code for checking */
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article1 {
+  flex: 0 0 50%;
+  padding: 10px;
+  width: 30%;
+}
+.article2 {
+  flex: 0 0 50%;
+  padding: 10px;
+  width:70%
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
