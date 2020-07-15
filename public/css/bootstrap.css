@@ -39,7 +39,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-size: 20px;
+  /* font-size: 20px; */
   
 }
 
@@ -552,6 +552,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 0px;
 }
 
 @media (min-width: 576px) {
@@ -619,6 +620,22 @@ pre code {
   margin-left: -15px;
   padding: 10%;
 }
+.row-story{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  
+}
+.row-seller{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* margin-right: -15px;
+  margin-left: -15px;
+  padding: 10%; */
+}
 
 .row-foot{
   display: -ms-flexbox;
@@ -656,7 +673,7 @@ pre code {
   position: relative;
   width: 100%;
   padding-right: 15px;
-  padding-left: 270px;
+  padding-left: 370px;
 }
 
 .col {
@@ -4817,6 +4834,7 @@ input[type="button"].btn-block {
 
 .card-text:last-child {
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 .card-link:hover {
@@ -6811,7 +6829,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #fff !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,

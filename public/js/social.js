@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
        //console.log( url );
        //console.log( title );
     
-    //facebook
+    //whatsapp
     $('#share-wa').attr('data-url', url).attr('data-title', title).attr('data-sharer', 'whatsapp');
     //facebook
     $('#share-fb').attr('data-url', url).attr('data-sharer', 'facebook');
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // google plus
     $('#share-gp').attr('data-url', url).attr('data-title', title).attr('data-sharer', 'googleplus');
       // email
-      $('#share-em').attr('data-url', url).attr('data-title', title).attr('data-subject', subject).attr('data-sharer', 'email');
+    $('#share-em').attr('data-url', url).attr('data-title', title).attr('data-subject', subject).attr('data-sharer', 'email');
     
     //Prevent basic click behavior
     $( ".sharer button" ).click(function() {

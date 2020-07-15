@@ -19,7 +19,7 @@ label.logo{
   color: #f2f2f2;
   font-size: 33px;
   line-height: 80px;
-  padding: 0 140px;
+  padding: -1px 140px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
 }
@@ -44,8 +44,9 @@ nav ul li a{
   font-size: 16px;
 }
 a.active,a:hover{
-  background:#F0E68C; 
+  /* background:#F0E68C;  */
   transition: .5s;
+  font-weight: bold;
 }
 .checkbtn{
   font-size: 30px;
@@ -154,6 +155,7 @@ b{
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  height: 550px;
 }
 
 .masthead .entry-header {
@@ -180,6 +182,8 @@ b{
   background: goldenrod;
   border: goldenrod;
 }
+
+ 
 .masthead .entry-header .tel{
   border: 1px solid #000000;
   background-color: white;
@@ -260,11 +264,12 @@ background-color: lightgoldenrodyellow;
 /* individual blog css here */
 .blog{
 font-size: 25px;
-padding: 53px 70px 40px 340px;
+padding: 19px 38px 0px 38px;
 }
 .blog .he1{
   font-size: 2vw;
   padding-bottom: 30px;
+  padding-top: 60px;
 }
 
 .blog .he4{
@@ -302,4 +307,81 @@ padding: 53px 70px 40px 340px;
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+.phead{
+  padding-top: 35%;
+  padding-left: 75px;
+  font-size: 20px ;
+}
+
+.h1head{
+  padding-left: 75px;
+  font-size: 35px;
+}
+
+.h1headjoin{
+  padding-top: 20%;
+  font-size: 35px;
+}
+
+
+
+.parent {
+  height:1000px;
+  width:auto;
+}
+.childA{
+float:left;
+width:20%;
+background-color:#fff;
+height:1000px
+}
+.childB {
+float:right;
+width:80%;
+background-color:#fff;
+height:1000px
+}
+
+.social{
+  display: inline-grid;
+    padding-left: 20px;
+}
+
+.h2social{
+  padding-top: 60%;
+}
+
+.he3{
+  padding-top:15px;
+
+}
+.sidelink{
+  font-size: 15px;
+  padding-bottom: 15px;
+  /* box-sizing: unset; */
+  border-bottom: groove;
+}
+.containersidelink{
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 150px;
+}
+
+.containersell{
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 430px;
+}
+.containersell .psell{
+  font-size: 15px;
+  padding: 15px 70px 0 70px;
+  text-align: center;
 }

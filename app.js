@@ -35,6 +35,27 @@ app.get('/benefits', function(req, res) {
     res.render('pages/benefits');
 });
 
+// faq Getting start page 
+app.get('/faq', function(req, res) {
+    res.render('pages/faq');
+});
+
+// faqpricing page 
+app.get('/faqpricing', function(req, res) {
+    res.render('pages/faqpricing');
+});
+
+// faqlisting page 
+app.get('/faqlisting', function(req, res) {
+    res.render('pages/faqlisting');
+});
+
+// faqorder page 
+app.get('/faqorder', function(req, res) {
+    res.render('pages/faqorder');
+});
+
+
 // app.get('/',function(req,res){
 //     res.sendfile('index.html');
 // })
